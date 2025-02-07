@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 260,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T01:08:05.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
