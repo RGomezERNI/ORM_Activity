@@ -12,7 +12,7 @@ using SubscriberAPP_CodeFirst.DbContext;
 namespace SubscriberAPP_CodeFirst.Migrations
 {
     [DbContext(typeof(SubscriberDbContext))]
-    [Migration("20250210021708_Initial Migrate")]
+    [Migration("20250210032943_Initial Migrate")]
     partial class InitialMigrate
     {
         /// <inheritdoc />
@@ -164,6 +164,37 @@ namespace SubscriberAPP_CodeFirst.Migrations
                     b.ToTable("GoverningOfficeSubscriber");
                 });
 
+            modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.BillingInfo", b =>
+                {
+                    b.Property<int>("BillingInfoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BillingInfoId"));
+
+                    b.Property<string>("BillingCycle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("LastBilledDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("PaymentMethodId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubscriberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BillingInfoId");
+
+                    b.HasIndex("PaymentMethodId");
+
+                    b.HasIndex("SubscriberId")
+                        .IsUnique();
+
+                    b.ToTable("BillingInfos");
+                });
+
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.CardDetail", b =>
                 {
                     b.Property<int>("CardDetailId")
@@ -302,6 +333,25 @@ namespace SubscriberAPP_CodeFirst.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.BillingInfo", b =>
+                {
+                    b.HasOne("CodeFirst_Subscriber.Entities.PaymentMethod", "PaymentMethod")
+                        .WithMany("BillingInfos")
+                        .HasForeignKey("PaymentMethodId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CodeFirst_Subscriber.Entities.Subscriber", "Subscriber")
+                        .WithOne("BillingInfo")
+                        .HasForeignKey("SubscriberAPP_CodeFirst.Entities.BillingInfo", "SubscriberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PaymentMethod");
+
+                    b.Navigation("Subscriber");
+                });
+
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.CardDetail", b =>
                 {
                     b.HasOne("CodeFirst_Subscriber.Entities.Subscriber", "Subscriber")
@@ -342,6 +392,8 @@ namespace SubscriberAPP_CodeFirst.Migrations
 
             modelBuilder.Entity("CodeFirst_Subscriber.Entities.PaymentMethod", b =>
                 {
+                    b.Navigation("BillingInfos");
+
                     b.Navigation("Payments");
                 });
 
@@ -354,6 +406,9 @@ namespace SubscriberAPP_CodeFirst.Migrations
 
             modelBuilder.Entity("CodeFirst_Subscriber.Entities.Subscriber", b =>
                 {
+                    b.Navigation("BillingInfo")
+                        .IsRequired();
+
                     b.Navigation("CardDetails");
 
                     b.Navigation("Payments");

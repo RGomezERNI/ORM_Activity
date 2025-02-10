@@ -77,6 +77,34 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "BillingInfos",
+                columns: table => new
+                {
+                    BillingInfoId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BillingCycle = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastBilledDate = table.Column<DateOnly>(type: "date", nullable: false),
+                    SubscriberId = table.Column<int>(type: "int", nullable: false),
+                    PaymentMethodId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BillingInfos", x => x.BillingInfoId);
+                    table.ForeignKey(
+                        name: "FK_BillingInfos_PaymentMethods_PaymentMethodId",
+                        column: x => x.PaymentMethodId,
+                        principalTable: "PaymentMethods",
+                        principalColumn: "PaymentMethodId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BillingInfos_Subscribers_SubscriberId",
+                        column: x => x.SubscriberId,
+                        principalTable: "Subscribers",
+                        principalColumn: "SubscriberId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CardDetails",
                 columns: table => new
                 {
@@ -194,6 +222,17 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_BillingInfos_PaymentMethodId",
+                table: "BillingInfos",
+                column: "PaymentMethodId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BillingInfos_SubscriberId",
+                table: "BillingInfos",
+                column: "SubscriberId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_CardDetails_SubscriberId",
                 table: "CardDetails",
                 column: "SubscriberId");
@@ -237,6 +276,9 @@ namespace SubscriberAPP_CodeFirst.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "BillingInfos");
+
             migrationBuilder.DropTable(
                 name: "CardDetails");
 

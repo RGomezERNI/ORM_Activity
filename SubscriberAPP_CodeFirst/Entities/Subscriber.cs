@@ -25,6 +25,7 @@ namespace CodeFirst_Subscriber.Entities
         public ICollection<CardDetail>? CardDetails { get; set; }  
         public ICollection<Subscription> Subscriptions { get; set; }
         public ICollection<GoverningOffice> GoverningOffices { get; set; }
+        public BillingInfo BillingInfo { get; set; }
 
 
     }

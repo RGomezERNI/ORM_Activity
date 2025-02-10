@@ -207,6 +207,32 @@ using (var context = new SubscriberDbContext())
     context.Subscriptions.AddRange(subscriptions);
     context.SaveChanges();
 
-   
+    var billingInfos = new List<BillingInfo>
+    {
+        new BillingInfo
+        {
+            BillingCycle = "Monthly",
+            LastBilledDate = new DateOnly(2023, 10, 15),
+            SubscriberId = subscribers[0].SubscriberId,
+            PaymentMethodId = paymentMethods[1].PaymentMethodId // Assuming Credit Card is used
+        },
+        new BillingInfo
+        {
+            BillingCycle = "Monthly",
+            LastBilledDate = new DateOnly(2023, 10, 16),
+            SubscriberId = subscribers[1].SubscriberId,
+            PaymentMethodId = paymentMethods[2].PaymentMethodId // Assuming PayPal is used
+        },
+        new BillingInfo
+        {
+            BillingCycle = "Monthly",
+            LastBilledDate = new DateOnly(2023, 10, 17),
+            SubscriberId = subscribers[2].SubscriberId,
+            PaymentMethodId = paymentMethods[0].PaymentMethodId // Assuming Cash is used
+        }
+    };
+
+    context.BillingInfos.AddRange(billingInfos);
+    context.SaveChanges();
 
 }

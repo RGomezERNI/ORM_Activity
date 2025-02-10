@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.PaymentMethods.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscribers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscriptions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\governingoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\governingoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\dbcontext\\subscriberdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\dbcontext\\subscriberdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\billinginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\billinginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\subscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\subscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\governingoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\governingoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|c:\\users\\extgora\\source\\repos\\subscriberapp_codefirst\\subscriberapp_codefirst\\entities\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A951B85-7511-4AE7-9094-B752D4435711}|SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst.csproj|solutionrelative:subscriberapp_codefirst\\entities\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscriptions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOfficeSubscriber.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.PaymentMethods.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscribers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210020159_Initial Migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 260,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GoverningOffice.cs",
               "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\GoverningOffice.cs",
               "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Entities\\GoverningOffice.cs",
@@ -67,18 +83,7 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T00:55:02.07Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Subscriptions [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscriptions.sql",
-              "ToolTip": "dbo.Subscriptions [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T02:16:42.096Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -97,12 +102,66 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubscriberDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\DbContext\\SubscriberDbContext.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\DbContext\\SubscriberDbContext.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\DbContext\\SubscriberDbContext.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\DbContext\\SubscriberDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:24:05.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Subscriber.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\Subscriber.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Entities\\Subscriber.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\Subscriber.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Entities\\Subscriber.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvxoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:21:08.338Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Entities\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:20:35.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BillingInfo.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\BillingInfo.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Entities\\BillingInfo.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Entities\\BillingInfo.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Entities\\BillingInfo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:17:26.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Subscriptions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscriptions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscriptions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T02:16:42.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "20250210020532_Initial Migrate.cs",
               "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs",
               "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs",
@@ -110,12 +169,23 @@
               "RelativeToolTip": "SubscriberAPP_CodeFirst\\Migrations\\20250210020532_Initial Migrate.cs",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T02:05:32.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T02:05:32.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Program.cs",
+              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Program.cs",
+              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Program.cs",
+              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Program.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAiwMAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T01:52:04.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "20250210020159_Initial Migrate.cs",
               "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210020159_Initial Migrate.cs",
               "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Migrations\\20250210020159_Initial Migrate.cs",
@@ -123,82 +193,74 @@
               "RelativeToolTip": "SubscriberAPP_CodeFirst\\Migrations\\20250210020159_Initial Migrate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T02:01:59.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T02:01:59.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.__EFMigrationsHistory [Data]",
+              "DocumentIndex": 13,
+              "Title": "dbo.__EFMigrationsHistory.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.__EFMigrationsHistory.sql",
-              "ToolTip": "dbo.__EFMigrationsHistory [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.__EFMigrationsHistory.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:51.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.CardDetails [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.CardDetails.sql",
-              "ToolTip": "dbo.CardDetails [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:45.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "dbo.GoverningOffices [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOffices.sql",
-              "ToolTip": "dbo.GoverningOffices [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:39.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.GoverningOfficeSubscriber [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOfficeSubscriber.sql",
-              "ToolTip": "dbo.GoverningOfficeSubscriber [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:36.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.PaymentMethods [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.PaymentMethods.sql",
-              "ToolTip": "dbo.PaymentMethods [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:29.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.Plans [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Plans.sql",
-              "ToolTip": "dbo.Plans [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:22.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Subscribers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscribers.sql",
-              "ToolTip": "dbo.Subscribers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-10T01:57:09.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T01:57:51.659Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "dbo.CardDetails.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.CardDetails.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.CardDetails.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:45.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "dbo.GoverningOffices.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOffices.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOffices.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:39.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.GoverningOfficeSubscriber.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOfficeSubscriber.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.GoverningOfficeSubscriber.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:36.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.PaymentMethods.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.PaymentMethods.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.PaymentMethods.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:29.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dbo.Plans.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Plans.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Plans.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:22.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Subscribers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscribers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SubscriberDB/True/SqlTable/dbo.Subscribers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T01:57:09.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "20250210015640_Initial Migrate.cs",
               "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Migrations\\20250210015640_Initial Migrate.cs",
               "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Migrations\\20250210015640_Initial Migrate.cs",
@@ -206,21 +268,11 @@
               "RelativeToolTip": "SubscriberAPP_CodeFirst\\Migrations\\20250210015640_Initial Migrate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T01:56:40.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T01:56:40.849Z"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Program.cs",
-              "RelativeDocumentMoniker": "SubscriberAPP_CodeFirst\\Program.cs",
-              "ToolTip": "C:\\Users\\extgora\\source\\repos\\SubscriberAPP_CodeFirst\\SubscriberAPP_CodeFirst\\Program.cs",
-              "RelativeToolTip": "SubscriberAPP_CodeFirst\\Program.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAAALQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T01:52:04.936Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
