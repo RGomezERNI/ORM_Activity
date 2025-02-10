@@ -19,10 +19,13 @@ namespace CodeFirst_Subscriber.Entities
         public string City { get; set; }
         public string ZipCode { get; set; }
         public DateOnly BirthDate { get; set; }
+       
 
         public ICollection<Payment> Payments { get; set; }
         public ICollection<CardDetail>? CardDetails { get; set; }  
         public ICollection<Subscription> Subscriptions { get; set; }
+        public ICollection<GoverningOffice> GoverningOffices { get; set; }
+
 
     }
 }

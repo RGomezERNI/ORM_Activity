@@ -18,12 +18,11 @@ namespace SubscriberAPP_CodeFirst.DbContext
         public DbSet<Plan> Plans { get; set; }
         public DbSet<CardDetail> CardDetails { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<GoverningOffice> GoverningOffices { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //  optionsBuilder.UseSqlServer("Server = A-5CG5010L7Q;Database=SubscriberDB;Trusted_connection=True;TrustServerCertificate=True;");
             optionsBuilder.UseSqlServer("Server = (localdb)\\MSSQLLocalDB;Database=SubscriberDB;Trusted_connection=True;TrustServerCertificate=True;");
-
-
         }
     }
 }

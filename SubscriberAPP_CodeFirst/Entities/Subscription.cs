@@ -14,8 +14,10 @@ namespace SubscriberAPP_CodeFirst.Entities
         public int PlanId { get; set; }
         public DateOnly StartDate { get; set; }
         public string Status {  get; set; }
-        
+        public int GoverningOfficeId { get; set; }
+
         public Subscriber Subscriber { get; set; }
-        public Plan Plan { get; set; } 
+        public Plan Plan { get; set; }
+        public GoverningOffice GoverningOffice { get; set; }
     }
 }

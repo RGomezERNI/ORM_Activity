@@ -12,8 +12,8 @@ using SubscriberAPP_CodeFirst.DbContext;
 namespace SubscriberAPP_CodeFirst.Migrations
 {
     [DbContext(typeof(SubscriberDbContext))]
-    [Migration("20250207061656_Made Card Details Optional for Subscriber")]
-    partial class MadeCardDetailsOptionalforSubscriber
+    [Migration("20250210021708_Initial Migrate")]
+    partial class InitialMigrate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -149,6 +149,21 @@ namespace SubscriberAPP_CodeFirst.Migrations
                     b.ToTable("Subscribers");
                 });
 
+            modelBuilder.Entity("GoverningOfficeSubscriber", b =>
+                {
+                    b.Property<int>("GoverningOfficesGoverningOfficeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubscribersSubscriberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("GoverningOfficesGoverningOfficeId", "SubscribersSubscriberId");
+
+                    b.HasIndex("SubscribersSubscriberId");
+
+                    b.ToTable("GoverningOfficeSubscriber");
+                });
+
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.CardDetail", b =>
                 {
                     b.Property<int>("CardDetailId")
@@ -181,6 +196,35 @@ namespace SubscriberAPP_CodeFirst.Migrations
                     b.ToTable("CardDetails");
                 });
 
+            modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.GoverningOffice", b =>
+                {
+                    b.Property<int>("GoverningOfficeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoverningOfficeId"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OfficeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Zip")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GoverningOfficeId");
+
+                    b.ToTable("GoverningOffices");
+                });
+
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.Subscription", b =>
                 {
                     b.Property<int>("SubscriptionId")
@@ -188,6 +232,9 @@ namespace SubscriberAPP_CodeFirst.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubscriptionId"));
+
+                    b.Property<int>("GoverningOfficeId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PlanId")
                         .HasColumnType("int");
@@ -203,6 +250,8 @@ namespace SubscriberAPP_CodeFirst.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("SubscriptionId");
+
+                    b.HasIndex("GoverningOfficeId");
 
                     b.HasIndex("PlanId");
 
@@ -238,6 +287,21 @@ namespace SubscriberAPP_CodeFirst.Migrations
                     b.Navigation("Subscriber");
                 });
 
+            modelBuilder.Entity("GoverningOfficeSubscriber", b =>
+                {
+                    b.HasOne("SubscriberAPP_CodeFirst.Entities.GoverningOffice", null)
+                        .WithMany()
+                        .HasForeignKey("GoverningOfficesGoverningOfficeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CodeFirst_Subscriber.Entities.Subscriber", null)
+                        .WithMany()
+                        .HasForeignKey("SubscribersSubscriberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.CardDetail", b =>
                 {
                     b.HasOne("CodeFirst_Subscriber.Entities.Subscriber", "Subscriber")
@@ -251,6 +315,12 @@ namespace SubscriberAPP_CodeFirst.Migrations
 
             modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.Subscription", b =>
                 {
+                    b.HasOne("SubscriberAPP_CodeFirst.Entities.GoverningOffice", "GoverningOffice")
+                        .WithMany("Subscriptions")
+                        .HasForeignKey("GoverningOfficeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CodeFirst_Subscriber.Entities.Plan", "Plan")
                         .WithMany("Subscriptions")
                         .HasForeignKey("PlanId")
@@ -262,6 +332,8 @@ namespace SubscriberAPP_CodeFirst.Migrations
                         .HasForeignKey("SubscriberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("GoverningOffice");
 
                     b.Navigation("Plan");
 
@@ -286,6 +358,11 @@ namespace SubscriberAPP_CodeFirst.Migrations
 
                     b.Navigation("Payments");
 
+                    b.Navigation("Subscriptions");
+                });
+
+            modelBuilder.Entity("SubscriberAPP_CodeFirst.Entities.GoverningOffice", b =>
+                {
                     b.Navigation("Subscriptions");
                 });
 #pragma warning restore 612, 618

@@ -6,11 +6,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SubscriberAPP_CodeFirst.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitialMigrate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "GoverningOffices",
+                columns: table => new
+                {
+                    GoverningOfficeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OfficeName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StreetAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Zip = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_GoverningOffices", x => x.GoverningOfficeId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "PaymentMethods",
                 columns: table => new
@@ -84,6 +100,30 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "GoverningOfficeSubscriber",
+                columns: table => new
+                {
+                    GoverningOfficesGoverningOfficeId = table.Column<int>(type: "int", nullable: false),
+                    SubscribersSubscriberId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_GoverningOfficeSubscriber", x => new { x.GoverningOfficesGoverningOfficeId, x.SubscribersSubscriberId });
+                    table.ForeignKey(
+                        name: "FK_GoverningOfficeSubscriber_GoverningOffices_GoverningOfficesGoverningOfficeId",
+                        column: x => x.GoverningOfficesGoverningOfficeId,
+                        principalTable: "GoverningOffices",
+                        principalColumn: "GoverningOfficeId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_GoverningOfficeSubscriber_Subscribers_SubscribersSubscriberId",
+                        column: x => x.SubscribersSubscriberId,
+                        principalTable: "Subscribers",
+                        principalColumn: "SubscriberId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Payments",
                 columns: table => new
                 {
@@ -127,11 +167,18 @@ namespace SubscriberAPP_CodeFirst.Migrations
                     SubscriberId = table.Column<int>(type: "int", nullable: false),
                     PlanId = table.Column<int>(type: "int", nullable: false),
                     StartDate = table.Column<DateOnly>(type: "date", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GoverningOfficeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Subscriptions", x => x.SubscriptionId);
+                    table.ForeignKey(
+                        name: "FK_Subscriptions_GoverningOffices_GoverningOfficeId",
+                        column: x => x.GoverningOfficeId,
+                        principalTable: "GoverningOffices",
+                        principalColumn: "GoverningOfficeId",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Subscriptions_Plans_PlanId",
                         column: x => x.PlanId,
@@ -152,6 +199,11 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 column: "SubscriberId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_GoverningOfficeSubscriber_SubscribersSubscriberId",
+                table: "GoverningOfficeSubscriber",
+                column: "SubscribersSubscriberId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Payments_PaymentMethodId",
                 table: "Payments",
                 column: "PaymentMethodId");
@@ -165,6 +217,11 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 name: "IX_Payments_SubscriberId",
                 table: "Payments",
                 column: "SubscriberId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Subscriptions_GoverningOfficeId",
+                table: "Subscriptions",
+                column: "GoverningOfficeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Subscriptions_PlanId",
@@ -184,6 +241,9 @@ namespace SubscriberAPP_CodeFirst.Migrations
                 name: "CardDetails");
 
             migrationBuilder.DropTable(
+                name: "GoverningOfficeSubscriber");
+
+            migrationBuilder.DropTable(
                 name: "Payments");
 
             migrationBuilder.DropTable(
@@ -191,6 +251,9 @@ namespace SubscriberAPP_CodeFirst.Migrations
 
             migrationBuilder.DropTable(
                 name: "PaymentMethods");
+
+            migrationBuilder.DropTable(
+                name: "GoverningOffices");
 
             migrationBuilder.DropTable(
                 name: "Plans");
